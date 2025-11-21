@@ -1,0 +1,4 @@
+variable "name" { type = string }
+variable "public_subnets" { type = list(string) }
+variable "security_groups" { type = list(string) }
+variable "tags" { type = map(string) default = {} }

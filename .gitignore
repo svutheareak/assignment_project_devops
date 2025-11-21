@@ -1,0 +1,81 @@
+# ===============================
+# Terraform
+# ===============================
+**/.terraform/
+**/.terraform.lock.hcl
+**/terraform.tfstate
+**/terraform.tfstate.*
+**/override.tf
+**/override.tf.json
+**/*_override.tf
+**/*_override.tf.json
+tfplan
+**/tfplan
+*.tfvars
+*.tfvars.json
+
+# Ignore environment-specific secrets
+infra/env/**/secret.auto.tfvars
+infra/env/**/backend.hcl
+
+# Local crash logs
+crash.log
+*.log
+
+# ===============================
+# AWS
+# ===============================
+# AWS keys (Never commit these)
+*.pem
+*.key
+credentials
+config
+
+# Elastic Beanstalk
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+
+# AWS SAM
+**/.aws-sam/
+
+# ===============================
+# Python (if inside repository)
+# ===============================
+__pycache__/
+*.pyc
+
+# ===============================
+# Node / Web Assets (optional)
+# ===============================
+node_modules/
+dist/
+build/
+coverage/
+
+# ===============================
+# Docker
+# ===============================
+**/.docker
+**/.dockerignore
+
+# ===============================
+# Editor / OS Files
+# ===============================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.tmp
+
+# ===============================
+# CI/CD
+# ===============================
+# GitHub Actions runner temp files
+actions-runner/
+runner/
+
+# Logs
+*.log
+logs/
